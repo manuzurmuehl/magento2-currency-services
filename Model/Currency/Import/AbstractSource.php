@@ -89,28 +89,6 @@ abstract class AbstractSource extends AbstractImport
     }
 
     /**
-     * Get access token
-     *
-     * @return string
-     */
-    protected function getAccessToken()
-    {
-        $source = static::SOURCE_NAME;
-        if (empty($source) || $source === self::SOURCE_NAME) {
-            return static::DEFAULT_TOKEN;
-        }
-
-        $value = (string)$this->_scopeConfig->getValue(
-            'currency/' . $source . '/token',
-            \Magento\Store\Model\ScopeInterface::SCOPE_STORE
-        );
-
-        $value = empty($value) ? static::DEFAULT_TOKEN : $value;
-
-        return $value;
-    }
-
-    /**
      * Get currency markup
      *
      * @return float

@@ -7,17 +7,6 @@
                 <delay>1</delay>
 		<markup>0</markup>
             </ecb>
-            <fixer>
-                <timeout>100</timeout>
-                <delay>1</delay>
-                <token>1</token>
-		<markup>0</markup>
-            </fixer>
-            <google>
-                <timeout>100</timeout>
-                <delay>1</delay>
-		<markup>0</markup>
-            </google>
         </currency>
     </default>
 </config>
