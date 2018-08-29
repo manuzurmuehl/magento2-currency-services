@@ -107,7 +107,7 @@ abstract class AbstractSource extends AbstractImport
 
         $value = empty($value) ? static::DEFAULT_MARKUP : $value;
 
-        return 0.915;
+        return 1.085;
     }
 
     /**
